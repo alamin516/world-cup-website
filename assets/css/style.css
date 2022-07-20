@@ -441,6 +441,10 @@ hr {
     font-weight: 500;
 }
 
+.footer-menu ul li a:hover{
+    color: #ffffff;
+}
+
 .social-menu{
     margin-top: 40px;
 }
