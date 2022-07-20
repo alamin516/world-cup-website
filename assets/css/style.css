@@ -78,7 +78,7 @@ Banner Section
     color: #ffffff;
     margin-bottom: 20px;
     transition: all .3s;
-    animation: floatText 1s ease-in-out .5s alternate;
+    animation: floatText 1s ease-in-out .1s alternate;
 }
 
 
@@ -101,7 +101,7 @@ Banner Section
     line-height: 24px;
     padding-right: 55px;
     transition: all .3s;
-    animation: floatLeft 1s ease-in-out .5s alternate;
+    animation: floatLeft 1s ease-in-out .2s alternate;
 }
 
 @keyframes floatLeft{
@@ -127,7 +127,7 @@ Banner Section
     width: 194px;
     font-weight: 400;
     transition: width .5s;
-    animation: floatLeft 1s ease-in-out .5s alternate;
+    animation: floatLeft 1s ease-in-out .3s alternate;
 }
 
 .banner-btn .fa-solid {
