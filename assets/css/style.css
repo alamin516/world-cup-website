@@ -114,7 +114,7 @@ Banner Section
 .banner-img img {
     width: 581px;
     height: 613px;
-    margin-bottom: -5px;
+    margin-bottom: -7px;
 
 }
 
@@ -520,7 +520,7 @@ hr {
     }
     .banner-content {
         width: 50%;
-        padding-left: 76px;
+        padding: 0 0 50px 76px;
         margin-top: 61px;
     }
     
@@ -542,10 +542,16 @@ hr {
 
     }
 
+    .banner-img {
+        width: 50%;
+        margin-top: 0;
+    }
+
     .banner-img img {
         width: 323px;
         height: 340px;
         margin-top: 50px;
+        margin-bottom: -29px;
     }
 
     .blog-section {
