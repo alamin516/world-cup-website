@@ -52,6 +52,7 @@ img {
 Banner Section
 ====================*/
 .banner-section {
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -61,6 +62,7 @@ Banner Section
     align-items: center;
     background: #161616;
     border-radius: 30px;
+    overflow: hidden;
 }
 
 .banner-content {
@@ -69,21 +71,49 @@ Banner Section
 }
 
 .banner-title {
+    position: relative;
     font-size: 70px;
     font-weight: 700;
     line-height: 80px;
     color: #ffffff;
     margin-bottom: 20px;
+    transition: all .3s;
+    animation: floatText 1s ease-in-out .5s alternate;
 }
 
+
+@keyframes floatText{
+    from {
+      transform: translateX(-102%);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+  }
+
 .banner-text {
+    position: relative;
     font-size: 16px;
     color: #ffffff;
     line-height: 24px;
     padding-right: 55px;
+    transition: all .3s;
+    animation: floatLeft 1s ease-in-out .5s alternate;
+}
+
+@keyframes floatLeft{
+    from {
+        transform: translateX(-105%);
+      }
+    
+      to {
+          transform: translateX(0);
+      }
 }
 
 .banner-btn {
+    position: relative;
     margin-top: 30px;
     display: inline-block;
     font-size: 20px;
@@ -92,8 +122,10 @@ Banner Section
     color: #ffffff;
     text-align: center;
     border-radius: 5px;
+    width: 194px;
     font-weight: 400;
-    transition: all .3s;
+    transition: width .5s;
+    animation: floatLeft 1s ease-in-out .5s alternate;
 }
 
 .banner-btn .fa-solid {
@@ -103,6 +135,7 @@ Banner Section
 .banner-btn:hover {
     color: #161616;
     background-color: #ffffff;
+    width: 250px;
 }
 
 .banner-img {
@@ -115,7 +148,20 @@ Banner Section
     width: 581px;
     height: 613px;
     margin-bottom: -7px;
+    position: relative;
+    transition: all .3s;
+    animation: photoRight 1s ease-in-out .5s;
 
+}
+
+@keyframes photoRight{
+    from {
+      right: -105%;
+    }
+  
+    to {
+      right: 0;
+    }
 }
 
 
@@ -258,7 +304,6 @@ article {
 
 }
 
-
 .more-blog {
     margin-top: 50px;
     display: none;
@@ -275,7 +320,6 @@ article {
     border: 1px solid #DD0000;
     border-radius: 5px;
     transition: all .3s;
-
 }
 
 .more-blog .btn:hover {
@@ -283,7 +327,6 @@ article {
     color: #DD0000;
     border: 1px solid #DD0000;
 }
-
 
 
 /*==========================
@@ -360,7 +403,6 @@ article {
     font-size: 20px;
 }
 
-
 /*========================
     Footer Style
 ==========================*/
@@ -368,7 +410,6 @@ footer {
     padding: 130px 0;
     background-color: #161616;
 }
-
 
 .footer-title {
     font-size: 40px;
@@ -398,15 +439,47 @@ hr {
     font-size: 16px;
     color: #B9B9B9;
     font-weight: 500;
-
 }
 
+.social-menu{
+    margin-top: 40px;
+}
+
+.social-menu ul{
+    list-style: none;
+}
+.social-menu ul li{
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.social-menu ul li a{
+    display: inline-block;
+    color: #161616;
+    font-size: 20px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #B9B9B9;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.social-menu ul li a:hover{
+    background-color: #DD0000;
+    color: #ffffff;
+}
 
 /*==============================
     Responsive for Mobile 
 =================================*/
 
 @media only screen and (max-width: 767px) {
+    
+    .banner-section {
+        margin-top: 0;
+    }
     .container {
         margin: 0 20px;
     }
@@ -495,7 +568,6 @@ hr {
         margin: 0;
     }
 
-
     .footer-menu ul li a {
         line-height: 50px;
     }
@@ -509,6 +581,23 @@ hr {
         margin: 24px 0px;
     }
 
+    .social-menu{
+        margin-bottom: 20px;
+    }
+    .social-menu ul li a{
+        font-size: 16px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        background-color: #B9B9B9;
+        border-radius: 50%;
+        transition: all .3s;
+    }
+    
+    .social-menu ul li a:hover{
+        background-color: #DD0000;
+        color: #ffffff;
+    }
 }
 
 /*==============================
@@ -584,7 +673,6 @@ hr {
     article {
         width: 100%;
     }
-
 
     .blog-items {
         display: grid;
