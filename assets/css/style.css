@@ -85,10 +85,12 @@ Banner Section
 @keyframes floatText{
     from {
       transform: translateX(-102%);
+      opacity: .5;
     }
   
     to {
         transform: translateX(0);
+        opacity: 1;
     }
   }
 
