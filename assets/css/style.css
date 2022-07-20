@@ -520,8 +520,7 @@ hr {
     }
     .banner-content {
         width: 50%;
-        padding: 0 0 50px 76px;
-        margin-top: 61px;
+        padding: 61px 0 61px 76px;
     }
     
     .banner-title {
@@ -551,7 +550,7 @@ hr {
         width: 323px;
         height: 340px;
         margin-top: 50px;
-        margin-bottom: -29px;
+        margin-bottom: -40px;
     }
 
     .blog-section {
