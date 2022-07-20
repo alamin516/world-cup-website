@@ -375,7 +375,7 @@ hr {
     Responsive for Mobile 
 =================================*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .bg-black {
         flex-direction: column;
         width: 100%;
