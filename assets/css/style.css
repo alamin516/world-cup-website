@@ -476,6 +476,11 @@ hr {
     Responsive for Tablet
 ================================*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .banner-content {
+        width: 50%;
+        padding-left: 0px;
+    }
+    
     .banner-title {
         font-size: 40px;
     }
